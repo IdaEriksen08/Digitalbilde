@@ -12,13 +12,13 @@
 .section1 h1{
     font-weight: bold;
     font-size: 50px;
-    
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .section1 h3{
     font-weight: 600;
-    
+    margin-bottom: 10px;
 }
 
 .section2{
@@ -28,7 +28,62 @@
 
 .section2 img{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 5px;
 }
 
+.section3{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.section3 div{
+    background-color: rgb(226, 239, 248);
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+
+.section3 div h2{
+    margin-left: 20px;
+    color: rgb(54, 54, 123);
+}
+
+.section3 div li{
+    padding: 10px;
+}
+
+.section3 div button{
+    background-color: rgb(54, 54, 123);
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.section4{
+    width: 600px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.section4 img{
+    border-radius: 5px;
+    width: 550px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section4 div p{
+   font-size: 20px;
+}
