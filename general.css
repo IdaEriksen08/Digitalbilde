@@ -57,3 +57,44 @@ button {
 }
 
 /* END minimal CSS reset */
+
+/* Lik header og footer på alle nettsider */
+
+header {
+  background-color: rgba(173, 216, 230, 0.611);
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  flex-wrap: wrap;
+
+
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+
+}
+
+nav a {
+  transition: transform 0.2s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+
+}
+
+footer {
+  background-color: rgba(173, 216, 230, 0.611);
+  color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+}
