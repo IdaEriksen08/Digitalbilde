@@ -2,7 +2,37 @@
     height: 70px;
 }
 
-#s1{
-    height: 100vh;
+section{
+    height: fit-content;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 400px;
+    gap: 20px;
+    padding: 15%;
+    
+}
+
+article.hoved{
+    background-color: lightblue;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+article.liten{
+    background-color: aliceblue;
+    grid-column: span 1;
+}
+
+article.stor{
+    background-color: lightcyan;
+    grid-column: span 2;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
