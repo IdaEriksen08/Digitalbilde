@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="general.css">
 
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -19,75 +21,76 @@
             <a href="#">Link 3</a>
         </nav>
     </header>
-    
+
     <section>
         <img src="bilder/kiøye.png" class="hovedbilde">
     </section>
-    
+
     <section class="hoved">
         <section class="section1">
             <div>
                 <h1>KI endrer nyhetsvanene – men tilliten henger etter</h1>
-                <h3>Undersøkelser fra Universitetet i Bergen avslører at mange nordmenn føler seg lite informert om KI. Det skaper usikkerhet rundt hvordan teknologien påvirker journalistikk og tilliten til norske medier.</h3>
+                <h3>Undersøkelser fra Universitetet i Bergen avslører at mange nordmenn føler seg lite informert om KI.
+                    Det skaper usikkerhet rundt hvordan teknologien påvirker journalistikk og tilliten til norske
+                    medier.</h3>
             </div>
-    </section>
+        </section>
 
-    <section class="section2">
-        <div id="collapsable" class="kort">
-            <h2>Kortversjonen</h2>
-            <ul>
-                <li>Nordmenn har lav kunnskap om kunstig intelligens, og ligger under både det europeiske og internasjonale snittet.</li>
-                <li>Skepsisen til KI-genererte nyheter er høy, spesielt når det gjelder politiske og andre «harde» nyheter.</li>
-                    <li>Aksepten varierer mellom grupper, der yngre menn er mest positive, mens eldre og kvinner ofte er mer usikre eller negative.
+        <section class="section2">
+            <div id="collapsable" class="kort">
+                <h2>Kortversjonen</h2>
+                <ul>
+                    <li>Nordmenn har lav kunnskap om kunstig intelligens, og ligger under både det europeiske og
+                        internasjonale snittet.</li>
+                    <li>Skepsisen til KI-genererte nyheter er høy, spesielt når det gjelder politiske og andre «harde»
+                        nyheter.</li>
+                    <li>Aksepten varierer mellom grupper, der yngre menn er mest positive, mens eldre og kvinner ofte er
+                        mer usikre eller negative.
 
-</li>
-                    </ul>
-                    
-                    <button id="collapse">
-                        <p>Les Mer</p>
-                    </button>
-                </div>
-            </section>
+                    </li>
+                </ul>
+
+                <button id="collapse">
+                    <p>Les Mer</p>
+                </button>
+            </div>
+        </section>
     </section>
 
     <section class="section3">
 
         <div class="avsnitt">
             <p>
-                Den globale AI-boomen har nådd jussektoren for fullt. Investorer har den siste tiden pløyd inn mer enn
-                750 millioner dollar i oppstartsbedrifter som utvikler kunstig intelligens for juridiske formål.
-                Teknologien brukes blant annet til dokumentutforming, kontraktsanalyse og juridisk research, oppgaver
-                som tradisjonelt har vært både tidkrevende og kostbare.
+                En ny rapport fra Universitetet i Bergen viser at store deler av den norske befolkningen fortsatt har
+                begrenset kunnskap om kunstig intelligens. Bare rundt en tredjedel oppgir at de har god oversikt over
+                temaet, og nordmenn ligger dermed under både det internasjonale og europeiske gjennomsnittet. Kunnskapen
+                følger tydelige skillelinjer: personer med høyere utdanning og inntekt rapporterer oftere at de kjenner
+                til KI, og menn og yngre scorer generelt høyere enn kvinner og eldre.
             </p>
 
-            <p>
-            De nye investeringene viser at AI ikke lenger kun forbindes med rene teknologimiljøer – nå tas den i
-            bruk i mer etablerte og konservative bransjer som jus. Flere av de raskest voksende
-            legal-tech-selskapene tilbyr verktøy som lover både lavere kostnader, økt effektivitet og mer presise
-            analyser for advokater og interne juridiske avdelinger.
-            </p>
+            <p>Undersøkelsen avdekker også en utbredt skepsis til kunstig intelligens i journalistikken. Motstanden er særlig sterk når KI brukes til å lage nyheter om politikk, næringsliv og kriminalitet, mens innhold innen kultur og underholdning møter mindre motstand. Få sier de er komfortable med nyheter som i hovedsak er generert av KI, men det er større aksept for journalistiske produkter der KI kun brukes som et støtteverktøy. Yngre menn viser seg å være mest positive, mens mange eldre uttrykker usikkerhet eller manglende kjennskap.</p>
 
-            <p>Utviklingen markerer et tydelig skifte i hvordan juridiske tjenester kan leveres fremover. Mens enkelte
-            eksperter mener at AI vil bli et viktig konkurransefortrinn i advokatbransjen, peker andre på behovet
-            for nøye regulering og kvalitetssikring når teknologien skal brukes i fagfelt hvor nøyaktighet er
-            avgjørende.</p>
+            <p>Rapporten peker på at bruken av kunstig intelligens i redaksjoner kan påvirke publikums tillit til mediene. Når teknologien brukes til å produsere eller bearbeide nyhetsinnhold, reises spørsmål om kvalitet, fakta­sjekk og redaksjonell ansvarlighet. Samtidig er KI allerede på full vei inn i mediebransjen – både som hjelpemiddel for journalister og som teknologi som kommersielle eller politiske aktører kan bruke for å påvirke publikum. Forskerne mener derfor at både åpenhet om KI-bruk i redaksjoner og økt kompetanse hos publikum blir stadig viktigere framover.</p>
         </div>
 
         <div class="bilde1">
-            <img src="bilder/kistatistikk.png" alt="">
+            <h3>Hørt og lest om kunstig intelligens</h3>
+            <img src="bilder/kistatistikk.png">
+            <h3>La kunstig intelligens dekke nyhetstema</h3>
+            <img src="bilder/Skjermbilde 2025-11-17 145845.png" alt="">
         </div>
 
     </section>
-    
-     <footer></footer>
 
-     <script>
+    <footer></footer>
+
+    <script>
         const knappElm = document.getElementById("collapse")
         const accordionElm = document.getElementById("collapsable")
         let lesMer = true
         function collapse() {
             accordionElm.classList.toggle("kort")
-            
+
             lesMer = !lesMer
             if (lesMer) {
                 knappElm.innerHTML = "Les Mer"
@@ -99,4 +102,5 @@
         knappElm.addEventListener("click", collapse)
     </script>
 </body>
+
 </html>
