@@ -99,7 +99,7 @@ nav a:hover {
 }
 
 footer {
-  background-color:rgba(0 50 104) ;
+  background-color:rgb(10 34 56); ;
   color: white;
   height: 200px;
   display: flex;
