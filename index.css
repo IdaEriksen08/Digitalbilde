@@ -22,7 +22,6 @@ a.hoved{
 }
 
 a.liten{
-    background-color: aliceblue;
     grid-column: span 1;
 }
 
