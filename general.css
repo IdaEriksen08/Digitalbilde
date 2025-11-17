@@ -92,6 +92,12 @@ nav a:hover {
 
 }
 
+.home-icon {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
 footer {
   background-color:rgba(0 50 104) ;
   color: white;
