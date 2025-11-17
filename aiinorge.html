@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai i Norge</title>
+    <link rel="stylesheet" href="aiinorge.css">
+    <link rel="stylesheet" href="general.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="bilder/logo.jpg" alt="">
+        </div>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </nav>
+    </header>
+    
+    <section>
+        <img src="bilder/kiøye.png" class="hovedbilde">
+    </section>
+    
+    <section class="hoved">
+        <section class="section1">
+            <div>
+                <h1>KI endrer nyhetsvanene – men tilliten henger etter</h1>
+                <h3>Undersøkelser fra Universitetet i Bergen avslører at mange nordmenn føler seg lite informert om KI. Det skaper usikkerhet rundt hvordan teknologien påvirker journalistikk og tilliten til norske medier.</h3>
+            </div>
+    </section>
+
+    <section class="section2">
+        <div id="collapsable" class="kort">
+            <h2>Kortversjonen</h2>
+            <ul>
+                <li>Nordmenn har lav kunnskap om kunstig intelligens, og ligger under både det europeiske og internasjonale snittet.</li>
+                <li>Skepsisen til KI-genererte nyheter er høy, spesielt når det gjelder politiske og andre «harde» nyheter.</li>
+                    <li>Aksepten varierer mellom grupper, der yngre menn er mest positive, mens eldre og kvinner ofte er mer usikre eller negative.
+
+</li>
+                    </ul>
+                    
+                    <button id="collapse">
+                        <p>Les Mer</p>
+                    </button>
+                </div>
+            </section>
+    </section>
+
+    <section class="section3">
+
+        <div class="avsnitt">
+            <p>
+                Den globale AI-boomen har nådd jussektoren for fullt. Investorer har den siste tiden pløyd inn mer enn
+                750 millioner dollar i oppstartsbedrifter som utvikler kunstig intelligens for juridiske formål.
+                Teknologien brukes blant annet til dokumentutforming, kontraktsanalyse og juridisk research, oppgaver
+                som tradisjonelt har vært både tidkrevende og kostbare.
+            </p>
+
+            <p>
+            De nye investeringene viser at AI ikke lenger kun forbindes med rene teknologimiljøer – nå tas den i
+            bruk i mer etablerte og konservative bransjer som jus. Flere av de raskest voksende
+            legal-tech-selskapene tilbyr verktøy som lover både lavere kostnader, økt effektivitet og mer presise
+            analyser for advokater og interne juridiske avdelinger.
+            </p>
+
+            <p>Utviklingen markerer et tydelig skifte i hvordan juridiske tjenester kan leveres fremover. Mens enkelte
+            eksperter mener at AI vil bli et viktig konkurransefortrinn i advokatbransjen, peker andre på behovet
+            for nøye regulering og kvalitetssikring når teknologien skal brukes i fagfelt hvor nøyaktighet er
+            avgjørende.</p>
+        </div>
+
+        <div class="bilde1">
+            <img src="bilder/kistatistikk.png" alt="">
+        </div>
+
+    </section>
+    
+     <footer></footer>
+
+     <script>
+        const knappElm = document.getElementById("collapse")
+        const accordionElm = document.getElementById("collapsable")
+        let lesMer = true
+        function collapse() {
+            accordionElm.classList.toggle("kort")
+            
+            lesMer = !lesMer
+            if (lesMer) {
+                knappElm.innerHTML = "Les Mer"
+            } else {
+                knappElm.innerHTML = "Les Mindre"
+            }
+        }
+
+        knappElm.addEventListener("click", collapse)
+    </script>
+</body>
+</html>
