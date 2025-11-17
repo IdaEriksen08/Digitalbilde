@@ -1,5 +1,5 @@
 
-section{
+#s1{
     height: fit-content;
 }
 
@@ -32,4 +32,63 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#s2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.karusell {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 20%;
+    padding: 15px 40px 50px;
+    max-width: 100%;
+    color: white;
+    width: 1050px;
+    
+    
+}
+
+.karusell a {
+    height: 450px;
+    flex: 0 0 100%;
+    border-radius: 20px;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 30px;
+    border: 2px solid black;
+    
+}
+
+.karusell a:hover {
+    transform: scale(1.05);
+}
+
+.karusell::-webkit-scrollbar {
+    height: 10px;
+    padding-bottom: 10px;
+}
+
+.karusell::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.karusell::-webkit-scrollbar-thumb {
+    background: rgba(0, 50, 104, 0.75);
+    border-radius: 10px;
+}
+
+.karusell::-webkit-scrollbar-thumb:hover {
+    background: rgba(0 50 104);
 }
