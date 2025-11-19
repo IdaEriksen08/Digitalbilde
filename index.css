@@ -39,19 +39,19 @@ article {
     background-color: rgba(0, 50, 104, 0.1);
 }
 
-.guide{
+.guide {
     background-color: rgb(30 35 74);
-    
+
 }
 
-.guide h1
-{
+.guide h1 {
     color: white;
 }
 
-.guide h2{
+.guide h2 {
     color: rgb(179 245 255);
 }
+
 .stor article {
     display: flex;
     flex-direction: row;
@@ -73,6 +73,7 @@ h2 {
 
 .tekst {
     padding: 0 20px 20px;
+    flex: 1;
 }
 
 .tekst h1,
@@ -96,7 +97,7 @@ h2 {
     padding: 15px 40px 50px;
     max-width: 100%;
     color: white;
-    width: 900px;
+    width: 75%;
     height: auto;
 
 
@@ -161,6 +162,59 @@ footer {
 @media (width < 1150px) {
     aside {
         display: none;
+    }
+
+    .grid {
+        padding: 10% 10%;
+        gap: 30px;
+    }
+
+}
+
+@media (width < 1000px) {
+    .grid {
+        padding: 10% 7%;
+        gap: 25px;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    .karusell {
+        width: 90%;
+        padding: 15px 20px 50px;
+    }
+}
+
+@media (width < 750px) {
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 15% 5%;
+        gap: 50px;
+    }
+
+    .hoved,
+    .liten,
+    .stor {
+        grid-column: span 1;
+    }
+
+    .hoved {
+        grid-row: span 1;
+    }
+
+    .stor article {
+        flex-direction: column;
+    }
+
+    .stor img {
+        width: 100%;
+    }
+
+    .tekst h1,
+    .tekst h2 {
+        text-align: center;
     }
 
 }
