@@ -71,7 +71,7 @@ header {
   flex-wrap: wrap;
 }
 
-.logo{
+.logo {
   width: 150px;
 }
 
@@ -91,13 +91,14 @@ nav a:hover {
 }
 
 .home-icon {
-    font-size: 24px;
-    display: flex;
-    align-items: center;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
 }
 
 footer {
-  background-color:rgb(10 34 56); ;
+  background-color: rgb(10 34 56);
+  ;
   color: white;
   height: 200px;
   display: flex;

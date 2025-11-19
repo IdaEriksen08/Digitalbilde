@@ -1,7 +1,15 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .hovedbilde{
     height: 200px;
     width: 100%;
-    
+    margin-top: 40px;
 }
 .section1{
    height: fit-content;
