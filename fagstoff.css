@@ -130,3 +130,247 @@
             align-items: center;
             margin: auto;
         }
+
+        @media (max-width: 800px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .overskrift {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 30px 20px;
+    }
+
+    .overskrift h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .content-section {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    .content-section2 {
+        width: 90%;
+    }
+
+    .eksempel {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .image-box,
+    .image-box2 {
+        padding: 15px;
+    }
+
+    .image-placeholder img,
+    .image-placeholder2 img,
+    .filter img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-placeholder2 {
+        margin: 10px;
+    }
+
+    td {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .content-section {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .content-wrapper {
+        gap: 30px;
+    }
+
+    .content-section2 {
+        width: 90%;
+    }
+
+    .eksempel {
+        width: 90%;
+    }
+
+    .overskrift h1 {
+        width: 90%;
+        font-size: 35px;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .overskrift {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 30px 20px;
+    }
+
+    .overskrift h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .content-section {
+        padding: 25px;
+    }
+
+    .content-section2 {
+        width: 90%;
+    }
+
+    .eksempel {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .image-box,
+    .image-box2 {
+        padding: 15px;
+    }
+
+    .image-placeholder2 {
+        margin: 10px;
+    }
+
+    td {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .overskrift {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px 10px;
+        margin-top: 20px;
+    }
+
+    .overskrift h1 {
+        font-size: 24px;
+        border-bottom-width: 3px;
+    }
+
+    .content-section {
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .content-section2 {
+        width: 95%;
+    }
+
+    .text h2 {
+        font-size: 20px;
+        border-left-width: 3px;
+    }
+
+    .text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .eksempel {
+        width: 95%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .eksempel p {
+        font-size: 14px;
+    }
+
+    .image-box,
+    .image-box2 {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .image-placeholder {
+        padding: 10px;
+    }
+
+    .image-placeholder img,
+    .image-placeholder2 img,
+    .filter img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Extra small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .overskrift h1 {
+        font-size: 20px;
+    }
+
+    .text h2 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    td {
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+}

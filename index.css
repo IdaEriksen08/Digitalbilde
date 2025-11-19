@@ -1,33 +1,38 @@
-
-#s1{
+#s1 {
     height: fit-content;
 }
 
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 400px;
     gap: 40px;
-    padding: 5% 15%;
-    
+    padding: 3%;
+
 }
 
-.grid a{
+.grid a {
     transition: transform 0.5s ease;
 }
 
-a.hoved{
-    grid-column: span 2;
+a.hoved {
+    grid-column: span 4;
     grid-row: span 2;
 }
 
-a.liten{
-    grid-column: span 1;
+a.liten {
+    grid-column: span 2;
 }
 
-a.stor{
+a.stor {
     background-color: lightcyan;
-    grid-column: span 2;
+    grid-column: span 4;
+}
+
+.tynn {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: lightblue;
 }
 
 a.stor article{
@@ -39,7 +44,7 @@ a.stor article img{
     width: 70%;
 }
 
-article{
+article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,12 +53,12 @@ article{
     color: rgba(0 50 104);
 }
 
-h1{
+h1 {
     margin: 20px 0;
     font-size: xxx-large;
 }
 
-#s2{
+#s2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +74,8 @@ h1{
     max-width: 100%;
     color: white;
     width: 1050px;
-    
-    
+
+
 }
 
 .karusell a {
@@ -86,7 +91,7 @@ h1{
     padding-bottom: 30px;
     border: 2px solid black;
     color: black;
-    
+
 }
 
 a:hover {
