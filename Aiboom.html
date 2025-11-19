@@ -18,8 +18,8 @@
         </div>
         <nav>
             <a href="index.html" class="home-icon">
-            <i class="fa-solid fa-house-chimney"></i>
-        </a>
+                <i class="fa-solid fa-house-chimney"></i>
+            </a>
         </nav>
     </header>
 
@@ -87,7 +87,18 @@
             </p>
         </div>
     </section>
-    <footer></footer>
+
+    <footer>
+        <div class="logo">
+            <img src="bilder/logo.jpg" alt="">
+        </div>
+        <nav>
+            <img src="logo.png" alt="" class="logo">
+
+        </nav>
+        <p> Denne avisen er skrevet av Emilie, Mari, Ingrid, Ida og Angelica</p>
+
+    </footer>
 
 
 
@@ -97,7 +108,7 @@
         let lesMer = true
         function collapse() {
             accordionElm.classList.toggle("kort")
-            
+
             lesMer = !lesMer
             if (lesMer) {
                 knappElm.innerHTML = "Les Mer"

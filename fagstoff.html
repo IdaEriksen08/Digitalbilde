@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fagstoff</title>
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="fagstoff.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 </head>
 
 <body>
@@ -15,11 +17,16 @@
             <img src="bilder/logo.jpg" alt="">
         </div>
         <nav>
-            <a href="index.html">Hjem</a>
-        </nav>
+            <img src="logo.png" alt="" class="logo">
+
+            <nav>
+                <a href="index.html" class="home-icon">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </a>
+            </nav>
     </header>
     <section class="overskrift">
-        <h1>Fagstoff utseende til bilder</h1>
+        <h1>Fagstoff - utseende til bilder</h1>
     </section>
     <section class="content-section">
         <div class="content-wrapper">
@@ -66,40 +73,70 @@
     </section>
     <section class="content-section2">
         <div class="text">
-        <h2>Ramme inn bilder med kantlinjer</h2>
-        <table>
-            <tr>
-                <td>EGENSKAP</td>
-                <td>FORKLARING</td>
-                <td>EKSEMPEL</td>
-            </tr>
-            <tr>
-                <td>border-width</td>
-                <td>Tykkelse på rammen</td>
-                <td>border-width: 10px</td>
-            </tr>
-            <tr>
-                <td>border-style</td>
-                <td>Heltrukken ramme <br>
-                    Stiplet linje <br>
-                    Prikkete ramme</td>
-                <td>Border-style: solid; <br>
-                    border-style: dashed; <br>
-                    border-style: dotted;</td>
-            </tr>
-            <tr>
-                <td>border-color</td>
-                <td>Farge på rammen</td>
-                <td>border-color: dargorange;</td>
-            </tr>
-        </table>
+            <h2>Ramme inn bilder med kantlinjer</h2>
+            <p>En ramme består av kantlinjer rundt et bilde. Egenskapen border brukes til å ramme inn et bilde. Når du
+                skal ramme inn et bilde, må du angi tykkelsen på rammen, hva det skal være og hva slags farge rammen
+                skal ha. </p>
+            <table>
+                <tr>
+                    <td>EGENSKAP</td>
+                    <td>FORKLARING</td>
+                    <td>EKSEMPEL</td>
+                </tr>
+                <tr>
+                    <td>border-width</td>
+                    <td>Tykkelse på rammen</td>
+                    <td>border-width: 10px</td>
+                </tr>
+                <tr>
+                    <td>border-style</td>
+                    <td>Heltrukken ramme <br>
+                        Stiplet linje <br>
+                        Prikkete ramme</td>
+                    <td>Border-style: solid; <br>
+                        border-style: dashed; <br>
+                        border-style: dotted;</td>
+                </tr>
+                <tr>
+                    <td>border-color</td>
+                    <td>Farge på rammen</td>
+                    <td>border-color: darkorange;</td>
+                </tr>
+                <tr>
+                    <td>Border-radius</td>
+                    <td>Avrunding av rammen</td>
+                    <td>Border-radius: 5px;</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="content-section2">
+        <div class="text">
+            <h2>Kortform </h2>
+            <p>Verdiene til egenskapene border-width, border-style og border-color kan vi samle i en kortform der vi
+                angir verdiene til alle de tre egenskapene på en linje. Der hvor du ser en bindestrek i en egenskap,
+                fins det alltid en kortform hvor du kan angi alle egenskapene på én linje.</p>
+        </div>
+    </section>
+    <section>
+        <div class="text">
+            <div class="eksempel">
+                <p>Vi legger inn en ramme rundt et bilde, slik: <br>
+                    border: {width} {style} {color} {radius}</p>
+            </div>
         </div>
     </section>
     <section class="content-section">
         <div class="content-wrapper">
             <div class="text">
                 <h2>Marger rundt bilder</h2>
-                <p>Hvis vi ønsker å ha plass rundt et bilde, kan vi sette på en marg. CSS-koden margin: 20px gir en marg på 20 piksler rundt et bilde. På samme måte som border er også margin på kortform. Vi kan sette individuelle marger i fire retninger: margin-top, margin-right, margin-bottom og margin-left. Hvis du bruker kortformen skriver du den første verdien som lager marg ovenfor et element, den neste er til høyre, så under og til slutt venstre. Verdiene følger altså klokken og starter på klokken 12.00. CSS-koden margin: 10px 20px 30px 40px; betyr: 10px over, 20px til høyre, 30px under og 40px til venstre.</p>
+                <p>Hvis vi ønsker å ha plass rundt et bilde, kan vi sette på en marg. CSS-koden margin: 20px gir en marg
+                    på 20 piksler rundt et bilde. På samme måte som border er også margin på kortform. Vi kan sette
+                    individuelle marger i fire retninger: margin-top, margin-right, margin-bottom og margin-left. Hvis
+                    du bruker kortformen skriver du den første verdien som lager marg ovenfor et element, den neste er
+                    til høyre, så under og til slutt venstre. Verdiene følger altså klokken og starter på klokken 12.00.
+                    CSS-koden margin: 10px 20px 30px 40px; betyr: 10px over, 20px til høyre, 30px under og 40px til
+                    venstre.</p>
             </div>
             <div class="image-box2">
                 <div class="image-placeholder2">
@@ -110,14 +147,107 @@
         </div>
     </section>
     <section>
-        <h2>Skygger bak bilder</h2>
+        <div class="eksempel">
+            <div class="text">
+                <p>Vi legger inn en marg rundt et bilde, slik <br>
+                    margin: {marg over} {marg til høyre} {marg under} {marg til venstre};</p>
+            </div>
+        </div>
+    </section>
+    <section class="content-section2">
+        <div class="text">
+            <h2>Skygger bak bilder</h2>
+            <p>Med CSS kan vi definere hvordan et bilde eller et annet HTML-element skal kaste skygge. Det kan gi en fin
+                visuell effekt på nettsiden. Egenskapen box-shadow brukes til dette. Vi setter fire verdier: hvor langt
+                skyggen skal strekke seg til høyre for bildet, hvor langt den skal strekke seg under bildet, hvor langt
+                fra kanten av skyggen den skal tones ut, og til slutt hvilken farge skyggen skal ha. Hvis skyggen skal
+                falle til venstre for bildet, setter vi en negativ verdi for lengden. Det samme kan vi gjøre hvis
+                skyggen skal gå over bildet.</p>
+        </div>
     </section>
     <section>
-        <h2>Filtre på bilder</h2>
+        <div class="eksempel">
+            <div class="text">
+                <p>Vi legger inn skygger, slik: <br>
+                    box-shadow: {lengde til høyre} {lengde under} {lengde på uttoning} {farge};</p>
+            </div>
+        </div>
     </section>
-    <footer>
+    <section class="content-section">
+        <div class="content-wrapper">
+            <div class="text">
+                <h2>Filtre på bilder</h2>
+                <p>På mobilen din har du kanskje mulighet til å endre på bilder som du har tatt, ved å legge på effekter
+                    som gjør bildene om til svart-hvit, snu fargene som i et røntgenbilde eller bruke andre virkemidler.
+                    Dette kan du også gjøre med CSS slik: filter:effekt(verdier for effekt); Du kan også kombinere
+                    filtre slik: filter: effekt1(verdi1)effekt2(verdi2);</p>
+                <table>
+                    <tr class="header">
+                        <td>EGENSKAP</td>
+                        <td>FORKLARING</td>
+                    </tr>
+                    <tr>
+                        <td>filter: blur(5px);</td>
+                        <td>Uklarhet</td>
+                    </tr>
+                    <tr>
+                        <td>filter: brightness(0.4);</td>
+                        <td>Lysstyrke</td>
+                    </tr>
+                    <tr>
+                        <td>filter: contrast(200%);</td>
+                        <td>Kontrast</td>
+                    </tr>
+                    <tr>
+                        <td>filter: drop-shadow(16px 16px 20px blue);</td>
+                        <td>Skygge</td>
+                    </tr>
+                    <tr>
+                        <td>filter:grayscale(50%);</td>
+                        <td>Tar vekk farger</td>
+                    </tr>
+                    <tr>
+                        <td>filter: hue-rotate(90deg);</td>
+                        <td>Endre fargene</td>
+                    </tr>
+                    <tr>
+                        <td>filter: invert(75%);</td>
+                        <td>Snur fargene</td>
+                    </tr>
+                    <tr>
+                        <td>filter: opacity(25%);</td>
+                        <td>Gjennomsiktighet</td>
+                    </tr>
+                    <tr>
+                        <td>filter: saturate(30%);</td>
+                        <td>Styrke på fargene</td>
+                    </tr>
+                    <tr>
+                        <td>filter: sepia(60);</td>
+                        <td>Gammeldags</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image-box">
+                <div class="image-placeholder">
+                    <div class="filter">
+                        <img src="bilder/clouds.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+         <footer>
+            <div class="logo">
+                <img src="bilder/logo.jpg" alt="">
+            </div>
+            <nav>
+                <img src="logo.png" alt="" class="logo">
 
-    </footer>
+            </nav>
+            <p> Denne avisen er skarevet av Emilie, Mari, Ingrid, Ida og Angelica</p>
+
+        </footer>
 </body>
 
 </html>
