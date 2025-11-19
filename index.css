@@ -30,6 +30,15 @@ a.stor{
     grid-column: span 2;
 }
 
+a.stor article{
+    display: flex;
+    flex-direction: row;
+}
+
+a.stor article img{
+    width: 70%;
+}
+
 article{
     display: flex;
     justify-content: center;
