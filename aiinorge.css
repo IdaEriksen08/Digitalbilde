@@ -180,6 +180,14 @@ body{
 .section4 div{
     margin-top: 20px;
 }
+
+#S4img{
+    height: 400px;
+    width: 550px;
+    border-radius: 5px;
+    margin: auto;
+}
+
 }
 
 
