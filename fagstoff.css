@@ -16,12 +16,18 @@
         .overskrift h1 {
             color: black;
             font-size: 40px;
+            border-bottom: black solid 4px;
+            width: 600px;
+            margin: auto;
         }
 
         .content-section2 {
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .content-section {
@@ -30,6 +36,7 @@
             box-shadow: 0 2px 40px rgb(10 34 56);
             max-width: 1200px;
             margin: auto;
+            margin-bottom: 40px;
         }
 
         .content-wrapper {
@@ -84,6 +91,9 @@
             justify-content: center;
             margin: 10px 20px 30px 40px;
         }
+        .filter img{
+            filter: drop-shadow(16px 16px 20px rgb(115, 133, 207));
+        }
 
         table {
             width: 100%;
@@ -110,4 +120,13 @@
         section{
             margin-top: 70px;
             margin-bottom: 70px;
+        }
+        .eksempel{
+            background-color: #90b0d7;
+            width: 700px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
         }
