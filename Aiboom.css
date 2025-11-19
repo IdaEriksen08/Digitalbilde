@@ -1,4 +1,8 @@
-
+.hovedbilde{
+    height: 200px;
+    width: 100%;
+    
+}
 .section1{
    height: fit-content;
 }
@@ -88,4 +92,13 @@
    font-size: 20px;
 }
 
-
+#collapsable.kort ul{
+   height: 100px;
+   overflow: hidden;
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
+                -webkit-mask-image: linear-gradient(
+                    to bottom,
+                    70%,
+                    transparent
+                );
+}

@@ -1,5 +1,4 @@
 header {
-
     width: 100vw;
     position: relative;
     left: 50%;
@@ -172,7 +171,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-.hvit{
+.hvit {
     color: rgb(100, 188, 255);
 }
 
@@ -260,4 +259,11 @@ h2 {
 
 .resources-section li {
     margin: 10px 0;
+}
+
+footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
 }
