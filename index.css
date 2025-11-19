@@ -15,45 +15,74 @@
     transition: transform 0.5s ease;
 }
 
-a.hoved {
+.hoved {
     grid-column: span 2;
     grid-row: span 2;
 }
 
-a.liten {
+.liten {
     grid-column: span 1;
 }
 
-a.stor {
+.stor {
     grid-column: span 2;
 }
 
-
-a.stor article{
-    display: flex;
-    flex-direction: row;
-}
-
-a.stor article img{
-    width: 70%;
-}
-
 article {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     color: rgba(0 50 104);
+    background-color: rgba(0, 50, 104, 0.1);
 }
 
+.guide{
+    background-color: rgb(30 35 74);
+    
+}
+
+.guide h1
+{
+    color: white;
+}
+
+.guide h2{
+    color: rgb(179 245 255);
+}
+.stor article {
+    display: flex;
+    flex-direction: row;
+}
+
+.stor img {
+    width: 70%;
+}
+
+
 h1 {
-    margin: 20px 0;
+    margin: 20px 0 10px;
     font-size: xxx-large;
+}
+
+h2 {
+    color: rgb(63, 70, 88);
+}
+
+.tekst {
+    padding: 0 20px 20px;
+}
+
+.tekst h1,
+h2 {
+    text-align: start;
 }
 
 #s2 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
@@ -67,14 +96,14 @@ h1 {
     padding: 15px 40px 50px;
     max-width: 100%;
     color: white;
-    width: 1050px;
+    width: 900px;
+    height: auto;
 
 
 }
 
 .karusell a {
-    height: 450px;
-    flex: 0 0 100%;
+    flex: 0 0 80%;
     scroll-snap-align: center;
     transition: transform 0.3s ease;
     background-size: cover;
@@ -82,8 +111,7 @@ h1 {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-bottom: 30px;
-    border: 2px solid black;
+    background-color: rgba(0, 50, 104, 0.1);
     color: black;
 
 }
@@ -111,7 +139,7 @@ a:hover {
     background: rgba(0 50 104);
 }
 
-aside{
+aside {
     border-radius: 20px;
     width: 160px;
     height: 600px;
@@ -122,4 +150,17 @@ aside{
     position: fixed;
     left: 10px;
     top: 100px;
+    z-index: 500;
+}
+
+footer {
+    position: relative;
+    z-index: 1000;
+}
+
+@media (width < 1150px) {
+    aside {
+        display: none;
+    }
+
 }
