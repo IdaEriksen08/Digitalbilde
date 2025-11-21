@@ -31,6 +31,18 @@
 
         <main>
             <aside></aside>
+
+            <script>
+                const reklamebilder = [
+                    'bilder/forside/reklame.png',
+                    'bilder/forside/reklame2.png',
+                    'bilder/forside/reklame3.png',
+                    'bilder/forside/reklame4.png'
+                ];
+
+                const tilfeldigBilde = reklamebilder[Math.floor(Math.random() * reklamebilder.length)];
+                document.querySelector('aside').style.backgroundImage = `url(${tilfeldigBilde})`;
+            </script>
             <section id="s1">
                 <div class="grid">
 
