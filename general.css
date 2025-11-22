@@ -76,24 +76,27 @@ header {
   z-index: 200;
 }
 
-.logo {
-  width: 150px;
+.logo img {
+  max-width: 160px;
+  height: auto;
 }
 
-nav {
+header nav {
   display: flex;
   gap: 20px;
+  align-items: center;
   flex-wrap: wrap;
-  
+
 }
 
-nav a {
+header nav a {
   transition: transform 0.2s ease;
   padding-bottom: 10px;
 }
 
-nav a:hover {
+header nav a:hover {
   transform: scale(1.1);
+  ;
 
 }
 
@@ -106,7 +109,6 @@ nav a:hover {
 footer {
   background-color: rgb(10 34 56);
   color: white;
-  height: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,18 +120,65 @@ footer {
 
 }
 
-.snarveier {
+footer .snarveier,
+.footerinfo {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  align-items: start;
+  min-width: 180px;
 }
 
-.snarveier a {
+footer .snarveier a {
   transition: transform 0.2s ease;
 }
 
-.snarveier a:hover {
+footer .snarveier a:hover {
   transform: scale(1.1);
   text-decoration: underline;
 
+}
+
+footer h3{
+  color: white;
+  font-size: large;
+}
+
+header b,
+footer b {
+  color:white;
+
+}
+
+footer ul,
+footer li,
+footer p {
+   margin-left: 0;
+    margin-bottom: 0;
+    font-size: large;
+}
+
+@media (max-width: 780px) {
+  header {
+    font-size: smaller;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  header nav {
+    justify-content: flex-end;
+  }
+
+  footer {
+    padding: 20px;
+    gap: 10px;
+    font-size: smaller;
+  }
+
+  footer .snarveier,
+  footer .info {
+    min-width: auto;
+    width: 100%;
+  }
 }
